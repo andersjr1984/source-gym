@@ -9,7 +9,6 @@ export const Home = () => {
       <h1>The Source Gym</h1>
       <Images/>
       <Details/>
-      <small>Website by the green owl.</small>
     </>
   )
 }

@@ -1,0 +1,9 @@
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profile-content div {
+  width: 50%;
+}

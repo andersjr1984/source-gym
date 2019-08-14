@@ -3,17 +3,16 @@ import { Figure, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import './Profile.css'
 
 export const Profile = () => {
   const [userProfile, setUP] = useState(null);
 
   return (
-    <>
-      <div className="profile-content">
-        <ProfilePic profile={userProfile}/>
-        <UserInfo profile={userProfile} />
-      </div>
-    </>
+    <div className="profile-content">
+      <ProfilePic profile={userProfile}/>
+      <UserInfo profile={userProfile} />
+    </div>
   )
 }
 
@@ -30,12 +29,11 @@ const ProfilePic = (props) => {
   );
 }
 
-const UserInfo = (props) => {
+const UserInfo = () => {
   return (
-    <p className="user-info">
+    <div className="user-info">
       Member since: <br/>
       Current expiration: <br/>
-
-    </p>
+    </div>
   )
 }

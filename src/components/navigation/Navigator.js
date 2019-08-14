@@ -27,7 +27,7 @@ export const Navigator = () => {
               <Link to='/Profile' onClick={()=>setShow(!show)}>
                 <FontAwesomeIcon icon={faAddressCard} /> - My Profile
               </Link>
-              <Link to='/LogIn'>
+              <Link to='/LogIn' onClick={()=>setShow(!show)}>
                 <FontAwesomeIcon icon={faSignInAlt}/> - Log In
               </Link>
             </Dropdown.Menu>
